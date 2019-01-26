@@ -4,13 +4,8 @@
     color: #666666;
 }
 
-
-
-
 body {
     margin: 0;
-
-
 }
 
 #header-nav {
@@ -28,14 +23,12 @@ header {
     width: fit-content;
     padding: 15px;
     float: left;
-
 }
 
 nav {
     float: right;
     background: #ffffff;
     padding-top: 25px;
-    
 }
 
 a:link {
@@ -55,19 +48,13 @@ section {
 
 article {
     width: 960px;
-    
     margin-right: auto;
-    
-    
     margin-left: auto;
     background: #ffffff;
     padding: 20px;
     border: solid #dddddd 2px;
-    
     overflow: hidden;
-    
 }
-
 
 h1 {
     color: #4aaaa5;
@@ -81,9 +68,6 @@ h1 {
     
 }
 
-
-
-
 footer {
     clear: both;
     background: #666666;
@@ -93,16 +77,11 @@ footer {
     padding-bottom: 5px;
     border-top: solid #4aaaa5 8px;
 }
-
-
-
 .image-container {
     position: relative;
-
     float: left;
-    
  }
-  
+
 .text-block {
     position: absolute;
     bottom: 50px;
@@ -117,15 +96,10 @@ footer {
     background: #80d6b6; 
 }
 
-
-
-
-
 .por-image {
     
     margin: 10px 20px 10px 0;
 }
-
 
 input {
     width: 100%;
@@ -152,27 +126,32 @@ button:hover {
     background: #80d6b6;
 }
 
-
-
-
-
 /* Vertical scrollbar */
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
-  }
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+/* Track */
+::-webkit-scrollbar-track {
     background: #ffffff; 
-  }
+}
    
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #666666; 
-  }
+}
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #4aaaa5;
-  }
+}
+
+/* Sticki footer */
+section {
+    min-height: calc(92.2vh - 70px);
+}
+
+footer {
+    height: 70px;
+}
