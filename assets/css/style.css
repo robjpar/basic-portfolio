@@ -1,3 +1,4 @@
+/* General styling */
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +40,6 @@ a:hover {
     color: #80d6b6;
 }
 
-
 section {
     background-image: url(../images/prism/prism.png);
     padding: 40px;
@@ -65,6 +65,8 @@ h1 {
 #me-image {
     float: left;
     margin: 10px 15px 10px 0;
+    width: 150px;
+    height: 150px;
     
 }
 
@@ -77,6 +79,8 @@ footer {
     padding-bottom: 5px;
     border-top: solid #4aaaa5 8px;
 }
+
+/* Specific to portfolio.html */
 .image-container {
     position: relative;
     float: left;
@@ -97,10 +101,12 @@ footer {
 }
 
 .por-image {
-    
     margin: 10px 20px 10px 0;
+    width: 300px;
+    height: 300px;
 }
 
+/* Specific to contact.html */
 input {
     width: 100%;
     margin-top: 5px;
@@ -126,28 +132,28 @@ button:hover {
     background: #80d6b6;
 }
 
-/* Vertical scrollbar */
-/* width */
+/* Scrollbar */
 ::-webkit-scrollbar {
+    /* width */
     width: 5px;
 }
-  
-/* Track */
+
 ::-webkit-scrollbar-track {
+    /* track */
     background: #ffffff; 
 }
-   
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
+    /* handle */
     background: #666666; 
 }
-  
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
+    /* handle on hover */
     background: #4aaaa5;
 }
 
-/* Sticki footer */
+/* Sticky footer */
 section {
     min-height: calc(92.2vh - 70px);
 }
