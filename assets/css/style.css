@@ -1,163 +1,229 @@
-/* General styling */
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #666666;
+
 }
 
 body {
-    margin: 0;
+    background-image: url(../images/white-waves/white-waves.png);
+    font-size: medium;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+
 }
 
-#header-nav {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-    overflow: hidden;
+strong {
+    font-weight: bold;
+
 }
 
-header {
-    background: #4aaaa5;
-    color: #ffffff;
+.division-general {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+
+}
+
+h1, h2, h3, p {
+    margin-bottom: 20px;
+
+}
+
+p:last-child {
+    margin-bottom: 0;
+
+}
+
+h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    width: fit-content;
-    padding: 15px;
+    font-weight: bold;
+    color: #4aaaa5;
+
+}
+
+h1 {
+    font-size: x-large;
+    line-height: 40px;
+    border-bottom: 3px solid #cccccc;
+    padding-bottom: 20px;
+
+}
+
+h2 {
+    font-size: larger;
+
+}
+
+h3 {
+    font-size: large;
+
+}
+
+#header-main {
+    background: #ffffff;
+    margin: 0 0 30px;
+    z-index: 99;
+    color: #ffffff;
+    overflow: auto;
+    border-bottom: 2px solid #cccccc;
+    position: fixed;
+    width: 100%;
+
+}
+
+#name-logo {
+    background: #4aaaa5;
     float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 25px;
+
+}
+
+#name-logo:hover {
+    background: #80d6b6;
 }
 
 nav {
     float: right;
-    background: #ffffff;
-    padding-top: 25px;
+    padding: 25px 0;
+
 }
 
-a:link {
+nav a {
+    color: #777777;
     text-decoration: none;
+    border-left: 1px solid #cccccc;
+    margin-left: 15px;
+    padding-left: 15px;
+
 }
 
-a:hover { 
+nav a:first-child {
+    border-left: none;
+
+}
+
+nav a:hover {
     color: #80d6b6;
 }
 
-section {
-    background-image: url(../images/prism/prism.png);
-    padding: 40px;
-    border-top: solid #666666 2px;
+#division-main {
+    padding-top: 120px;
+
 }
 
-article {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
+.section-main {
     background: #ffffff;
-    padding: 20px;
-    border: solid #dddddd 2px;
-    overflow: hidden;
-}
-
-h1 {
-    color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: x-large;
-}
-
-#me-image {
+    padding: 25px;
+    margin: 0 0 30px;
+    width: 100%;
+    /* max-width: 650px; */
     float: left;
-    margin: 10px 15px 10px 0;
-    width: 150px;
-    height: 150px;
+    border: 1px solid #dddddd;
+
+}
+
+#image-profile {
+    width: 200px;
+    height: auto;
+    margin: 10px 20px 0 0;
+    float: left;
+
+}
+
+.image-portfolio {
+    width: 300px;
+    height: auto;
+    float: left;
     
 }
 
 footer {
-    clear: both;
     background: #666666;
+    padding: 30px 0;
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+    color: #cccccc;
     text-align: center;
-    color: #ffffff;
-    padding-top: 30px;
-    padding-bottom: 5px;
-    border-top: solid #4aaaa5 8px;
+    font-size: small;
+
 }
 
-/* Specific to portfolio.html */
-.image-container {
+.division-image-portfolio {
+    width: 45%;
     position: relative;
     float: left;
- }
+    margin: 5% 2.5%;
 
-.text-block {
-    position: absolute;
-    bottom: 50px;
+}
+
+.division-image-portfolio img {
+    width: 100%;
+    opacity: .8;
+
+}
+
+.division-image-portfolio h2 {
     background-color: #4aaaa5;
     color: #ffffff;
-    padding: 20px;
-    width: 300px;
     text-align: center;
-}
-
-.text-block:hover { 
-    background: #80d6b6; 
-}
-
-.por-image {
-    margin: 10px 20px 10px 0;
-    width: 300px;
-    height: 300px;
-}
-
-/* Specific to contact.html */
-input {
     width: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10%;
+    line-height: 30px;
+    padding: 15px;
+    margin-bottom: 0;
 }
 
-textarea {
-    width: 100%;
-    height: 200px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-button {
-    color: #ffffff;
-    background: #4aaaa5;
-    padding: 5px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover { 
+.division-image-portfolio h2:hover {
     background: #80d6b6;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-    /* width */
-    width: 5px;
+#form-contact {
+    margin: 25px 0 10px;
+
 }
 
-::-webkit-scrollbar-track {
-    /* track */
-    background: #ffffff; 
+label,
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+
 }
 
-::-webkit-scrollbar-thumb {
-    /* handle */
-    background: #666666; 
+input[type=text],
+input[type=email],
+textarea {
+    border: 1px solid #dddddd;
+    font-size: medium;
+    padding: 10px;
+
 }
 
-::-webkit-scrollbar-thumb:hover {
-    /* handle on hover */
+textarea {
+    height: 200px;
+    font-size: large;
+}
+
+input[type=submit] { 
+    color: #ffffff;
     background: #4aaaa5;
+    font-size: large;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    
 }
 
-/* Sticky footer */
-section {
-    min-height: calc(92.2vh - 70px);
-}
+input[type=submit]:hover { 
+    background: #80d6b6;
 
-footer {
-    height: 70px;
 }
