@@ -1,7 +1,5 @@
 # Basic Portfolio
 
-## Description
-
 A professional portfolio website built with HTML and CSS.
 
 ## How to use
